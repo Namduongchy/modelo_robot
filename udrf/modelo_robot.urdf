@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="modelo_robot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0114900506700507 6.36785158519674E-05 0.513504388907538"
+        rpy="0 0 0" />
+      <mass
+        value="16.9436747811593" />
+      <inertia
+        ixx="0.247063125630784"
+        ixy="2.48277307026829E-05"
+        ixz="-2.34347997712136E-05"
+        iyy="0.150149602441472"
+        iyz="0.000237802910560565"
+        izz="0.30249168558263" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="right_B">
+    <inertial>
+      <origin
+        xyz="-1.75839943795291E-10 0.0291454993186157 7.2715736452178E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.958024072365839" />
+      <inertia
+        ixx="0.00158537262920461"
+        ixy="-1.10492114018988E-12"
+        ixz="-1.05721599399678E-11"
+        iyy="0.00270274012080462"
+        iyz="-3.83262444785558E-07"
+        izz="0.00158540702167189" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/right_B.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/right_B.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_Bj"
+    type="continuous">
+    <origin
+      xyz="0.00032265 -0.1631 0.02427"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_B" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="60"
+      velocity="1" />
+  </joint>
+  <link
+    name="left_B">
+    <inertial>
+      <origin
+        xyz="1.75839940963138E-10 -0.0291454993186157 7.2715736451831E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.958024072365839" />
+      <inertia
+        ixx="0.00158537262920461"
+        ixy="-1.10492115948948E-12"
+        ixz="1.05721606134042E-11"
+        iyy="0.00270274012080461"
+        iyz="3.83262444785617E-07"
+        izz="0.00158540702167189" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/left_B.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/left_B.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_Bj"
+    type="continuous">
+    <origin
+      xyz="0.00032265 0.16364 0.02427"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_B" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="60"
+      velocity="1" />
+  </joint>
+  <link
+    name="front_R">
+    <inertial>
+      <origin
+        xyz="-1.5404344466674E-15 -0.240499920739368 1.56819002228303E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.0164655807326482" />
+      <inertia
+        ixx="1.78458409516887E-06"
+        ixy="-1.05000235644541E-22"
+        ixz="9.37110654139334E-24"
+        iyy="2.97719203445308E-06"
+        iyz="8.19310032999411E-21"
+        izz="1.78458409516887E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/front_R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/front_R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_Rj"
+    type="continuous">
+    <origin
+      xyz="0.11166 0.12299 -0.035998"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_R" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="60"
+      velocity="1" />
+  </joint>
+  <link
+    name="rear_R">
+    <inertial>
+      <origin
+        xyz="-0.256985923423425 -0.240499920739366 6.73072708679001E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0164655807326482" />
+      <inertia
+        ixx="1.78458409516887E-06"
+        ixy="-8.56332754184663E-23"
+        ixz="1.98851957435753E-24"
+        iyy="2.97719203445308E-06"
+        iyz="8.19036450114429E-21"
+        izz="1.78458409516887E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/rear_R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/rear_R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_Rj"
+    type="continuous">
+    <origin
+      xyz="0.11166 0.12299 -0.035998"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_R" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="60"
+      velocity="1" />
+  </joint>
+  <link
+    name="front_L">
+    <inertial>
+      <origin
+        xyz="1.2490009027033E-16 -0.00750000000000012 -5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0164655807326482" />
+      <inertia
+        ixx="1.78458409516887E-06"
+        ixy="-1.05000235644541E-22"
+        ixz="9.37110654139334E-24"
+        iyy="2.97719203445308E-06"
+        iyz="8.19310032999411E-21"
+        izz="1.78458409516887E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/front_L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/front_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_Lj"
+    type="fixed">
+    <origin
+      xyz="0.11166 0.12299 -0.035998"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_L" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      effort="60"
+      velocity="1" />
+  </joint>
+  <link
+    name="rear_L">
+    <inertial>
+      <origin
+        xyz="-0.256985923423423 -0.00749999999999826 -9.57567358739198E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0164655807326482" />
+      <inertia
+        ixx="1.78458409516887E-06"
+        ixy="-8.56332754184662E-23"
+        ixz="1.98851957435753E-24"
+        iyy="2.97719203445308E-06"
+        iyz="8.19036450114429E-21"
+        izz="1.78458409516887E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/rear_L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/rear_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_Lj"
+    type="continuous">
+    <origin
+      xyz="0.11166 0.12299 -0.035998"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_L" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="60"
+      velocity="1" />
+  </joint>
+</robot>
